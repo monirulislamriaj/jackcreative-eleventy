@@ -1,0 +1,57 @@
+<section class="project-desc">
+  <div class="project-feature-photo">
+    <img src="{{featureImg}}" alt="Feature Image" class="w-100">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="project-desc-header">
+          <h3 class="">{{brand.overviewHead}}</h3>
+          <p class="">{{brand.overview}}</p>
+        </div>
+        <div class="project-desc-header">
+          <h3 class="">{{brand.goalHead}}</h3>
+          <p class="">{{brand.goal}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 me-auto">
+        <div class="project-desc-content">
+          <h3>{{problemHead}}</h3>
+          <ol class="list-styled">
+            {% for problem in problems %}
+            <li>{{problem}}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="project-desc-content">
+          <h3>{{solutionHead}}</h3>
+          <ol class="list-styled">
+            {% for solution in solutions %}
+            <li>{{solution}}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="banner">
+          <img src="{{bannerImg}}" alt="banner" class="w-100">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="project-desc-header">
+          <h3 class="">{{approachHead}}</h3>
+          <p class="">{{approach}}</p>
+          <div class="pt-22">
+            <img src="{{bannerImg2}}" alt="banner" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

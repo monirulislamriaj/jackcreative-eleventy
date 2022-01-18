@@ -1,0 +1,93 @@
+<section class="resume-two pt-xxl-7 pt-4">
+  <div class="resume-two-shape-wrapper position-absolute w-100 h-100">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="shape-3"></div>
+    <div class="shape-4"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="card">
+          <div class="section-header">
+            <h2>{{resume_dev.title}}</h2>
+          </div>
+          <div class="card-body">
+            <div class="experiencEducation">
+              <div class="experience">
+                <div class="title">
+                  <h5>{{resume_dev.workHead}}</h5>
+                </div>
+                {% for workExp in resume_dev.work %}
+                <div class="content">
+                  <h4>{{workExp.corp}}</h4>
+                  <p>
+                    {{workExp.dig}}<br />
+                    {{workExp.year}}
+                  </p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="education">
+                <div class="title">
+                  <h5>{{resume_dev.eduHead}}</h5>
+                </div>
+                {% for education in resume_dev.education %}
+                <div class="content">
+                  <h4>{{education.ins}}</h4>
+                  <p>
+                    {{education.degree}}<br />
+                    {{education.year}}
+                  </p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="freelance">
+              <div class="title">
+                <h5>{{resume_dev.clientsHead}}</h5>
+              </div>
+              <div class="freelance-wrapper">
+                {% for client in resume_dev.clients %}
+                <div class="item">
+                  <img src="{{client}}" alt="Clients Images" />
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="skillsTools pt-2">
+              <!--- Srart skills---->
+              <div class="skills">
+                <div class="title">
+                  <h5>{{resume_dev.skillsHead}}</h5>
+                </div>
+                <div class="text-lg-start">
+                  <div class="content mb-6 mb-lg-0">
+                    <ul class="list-unstyled">
+                      {% for skill in resume_dev.skills %}
+                      <li>{{skill}}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--- Srart tools---->
+              <div class="tools">
+                <div class="title">
+                  <h5>{{resume_dev.toolsHead}}</h5>
+                </div>
+                <div class="tools-wrapper">
+                  {% for tool in resume_dev.tools %}
+                  <div class="item">
+                    <img src="{{tool}}" alt="Tools I Use" />
+                  </div> 
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

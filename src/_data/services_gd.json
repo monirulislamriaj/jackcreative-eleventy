@@ -1,0 +1,30 @@
+{
+  "title": "Provide Services 🛠",
+  "provide":[
+    {
+      "title": "Logo Design",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-4.svg"
+    },
+    {
+      "title": "Brand Indentity",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-5.svg"
+    },
+    {
+      "title": "Illustration",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-6.svg"
+    },
+    {
+      "title": "Print Design",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-7.svg"
+    },
+    {
+      "title": "Social Design",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-8.svg"
+    }
+  ]
+}

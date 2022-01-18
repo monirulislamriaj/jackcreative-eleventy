@@ -1,0 +1,41 @@
+{
+  "logo": "/assets/images/logo.svg",
+  "logoWh": "/assets/images/logo-white.svg",
+  "navLinks":[
+    {
+      "text":"Project",
+      "link":"project"
+    },
+    {
+      "text":"Behance",
+      "link":"#"
+    },
+    {
+      "text":"Dribbble",
+      "link":"#"
+    },
+    {
+      "text":"Blog",
+      "link":"blog"
+    }
+  ],
+  "drpdnHead": "Home",
+  "drpdn":[
+    {
+      "text":"Product Designer",
+      "link":""
+    },
+    {
+      "text":"Developer",
+      "link":"home-dev"
+    },
+    {
+      "text":"Graphic Designer",
+      "link":"home-design"
+    }
+  ],
+  "btn":{
+    "text": "Contact",
+    "link": "contact"
+  }
+}

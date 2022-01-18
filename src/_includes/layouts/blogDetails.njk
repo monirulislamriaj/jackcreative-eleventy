@@ -1,0 +1,88 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <section class="blog-details  pt-8 pt-lg-10 pt-xl-12 pt-xxl-16">
+      <div class="blog-details-shape-wrapper position-absolute w-100 h-100">
+        <div class="shape-1">
+        </div>
+        <div class="shape-2">
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-lg-12">
+          <article class="card">
+            <!-- Start blog-des-hero section -->
+            <div class="blog-des-hero">
+              <h2>{{title}}</h2>
+              <div class="blog-des-hero-content d-sm-flex">
+                <div class="me-xxl-13 me-sm-8 me-0 mb-5">
+                  <span>{{typeHead}}</span>
+                  {% if tags %}
+                  {% set count = tags | length %}
+                  {% for index in range(0,1) %}
+                  <a href="/tags/{{tags[index]}}">
+                  <span class="title">{{tags[index]}}</span>
+                  </a> 
+                  {% endfor %}
+                  {% endif %}
+                  
+                </div>
+                <div class="">
+                  <span>{{dateHead}}</span>
+                  <span class="title">{{publishedDate}}</span>
+                </div>
+              </div>
+            </div>
+            <!--End blog-des-hero section -->
+            <div class="feature-image">
+              <img src="{{featureImg}}" class="w-100" alt="featured-image">
+            </div>
+            {{ content | safe}}
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-blog pt-xxl-8 pt-0 pb-xxl-4">
+      <div class="container">
+        <!---==== Start related-blog Section Header ---=====-->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="mb-7 text-lg-start text-center">{{recentBlog}}</h2>
+          </div>
+        </div>
+        <!---==== End related-blog Section Header ---=====-->
+        <div class="row">
+          <!---==== Start related-blog Item---=====-->
+          {% for index in range(0,3) %}
+          <div class="col-lg-4">
+            <article class="card ">
+              <div class="card-img">
+                <img src="{{collections.blogPost[index].data.featureImg}}" alt="featured-thumb1" class="w-100">
+              </div>
+              <div class="card-body">
+                <div class="blog-post-meta pt-4">
+                  <ul class="list-unstyled">
+                    <li class="">
+                      {% set tags = collections.blogPost[index].data.tags %}
+                      {% for index in range(1) %}
+                      <a href="/tags/{{tags[index]}}">{{tags[index]}}</a> 
+                      {% endfor %}
+                    </li>
+                    <li class="">
+                      <span class="ms-2">{{collections.blogPost[index].data.publishedDate}}</span>
+                    </li>
+                  </ul>
+                </div>
+                <a href="{{collections.blogPost[index].url}}">
+                  <h5>{{collections.blogPost[index].data.title}}</h5>
+                </a>
+              </div>
+            </article>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      </div>
+    </section>
+{% endblock %}

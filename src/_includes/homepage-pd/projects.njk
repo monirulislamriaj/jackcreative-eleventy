@@ -1,0 +1,175 @@
+<section class="project pb-xxl-14 pb-md-9 pb-6">
+  <div class="project-shape-wrapper position-absolute w-100 h-100">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="shape-3"></div>
+  </div>
+  <div class="container">
+    <!---==== Start project Section Header ---=====-->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-header">
+          <h2>{{projects.title}}</h2>
+        </div>
+      </div>
+    </div>
+    <!---==== End project Section Header ---=====-->
+    <div class="row">
+      <!---==== Start project Item---=====-->
+      {% for featured in collections.featured %}
+      <div class="col-lg-12">
+        <div class="project-item one mb-5">
+          <div class="project-item-content">
+            <h2>
+              {{featured.data.title}}
+            </h2>
+            <p>{{featured.data.type}}</p>
+            <a
+              href="{{featured.url}}"
+              class="btn btn-secondary btn-lg mb-4 mb-sm-0"
+            >
+              <span class="position-relative">{{featured.data.btnText}}</span>
+              <span class="position-relative">{{featured.data.btnText}}</span>
+            </a>
+          </div>
+          <div class="project-item-banner">
+            <img
+              src="{{featured.data.img}}"
+              class="w-100"
+              alt="project-image"
+            />
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+      {% set count = 0 %}
+      {% for index in range(0,2) %}
+      {% if index%2 == 0 %}
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="project-item piash mb-5">
+          <div class="project-item-content">
+            <h5 class="">
+              {{collections.projects[count].data.title}}
+            </h5>
+            <p class="">{{collections.projects[count].data.type}}</p>
+            <a
+              href="{{collections.projects[count].url}}"
+              class="btn btn-secondary btn-lg mb-4 mb-sm-0"
+            >
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+            </a>
+          </div>
+          <div class="project-item-banner">
+            <img
+              src="{{collections.projects[count].data.img}}"
+              class="w-100"
+              alt="project-image"
+            />
+          </div>
+        </div>
+      </div>
+      {% if collections.projects[count+1] %}
+      {% set count = count+1 %}
+      <div class="col-lg-4">
+        <div class="project-item-two piash">
+          <div class="project-item-two-content">
+            <h5>
+              {{collections.projects[count].data.title}}
+            </h5>
+            <p>{{collections.projects[count].data.type}}</p>
+            <a
+              href="{{collections.projects[count].url}}"
+              class="
+                btn btn-white btn-sm
+                w-80
+                mx-auto
+                w-sm-35 w-md-25 w-lg-50 w-xxl-40
+              "
+            >
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+            </a>
+          </div>
+          <div class="project-item-two-banner">
+            <img
+              src="{{collections.projects[count].data.img}}"
+              class="w-100"
+              alt="project-image"
+            />
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% if collections.projects[count+1] %}
+      {% set count = count+1 %}
+      {% endif %}
+    </div>
+      {% else %}
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="project-item-two piash">
+          <div class="project-item-two-content">
+            <h5>
+              {{collections.projects[count].data.title}}
+            </h5>
+            <p>{{collections.projects[count].data.type}}</p>
+            <a
+              href="{{collections.projects[count].url}}"
+              class="
+                btn btn-white btn-sm
+                w-80
+                mx-auto
+                w-sm-35 w-md-25 w-lg-50 w-xxl-40
+              "
+            >
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+            </a>
+          </div>
+          <div class="project-item-two-banner">
+            <img
+              src="{{collections.projects[count].data.img}}"
+              class="w-100"
+              alt="project-image"
+            />
+          </div>
+        </div>
+      </div>
+      {% if collections.projects[count+1] %}
+      {% set count = count + 1 %}
+      <div class="col-lg-8">
+        <div class="project-item bg-light-dark h-100 piash">
+          <div class="project-item-content">
+            <h5 class="text-white">
+              {{collections.projects[count].data.title}}
+            </h5>
+            <p class="text-white">{{collections.projects[count].data.type}}</p>
+            <a
+              href="{{collections.projects[count].url}}"
+              class="btn btn-white btn-sm mb-4 mb-sm-0"
+            >
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+              <span class="position-relative">{{collections.projects[count].data.btnText}}</span>
+            </a>
+          </div>
+          <div class="project-item-banner">
+            <img
+              src="{{collections.projects[count].data.img}}"
+              class="w-100"
+              alt="project-image"
+            />
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% if collections.projects[count+1] %}
+      {% set count = count + 1 %}
+      {% endif %}
+    </div>
+      {% endif %}
+      {% endfor %}
+  </div>
+</section>

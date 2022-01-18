@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8" />
+  <title>JackCreative</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="/assets/vendor/phosphor-icons/css/phosphor.css">
+  <link rel="stylesheet" href="/assets/vendor/slick/slick.css">
+  <link href="/assets/css/theme.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/images/favIcon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/images/favIcon.png" type="image/x-icon" />
+</head>
+  <body>
+{% block navbar %}
+  {% include "navbar.njk" %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}
+
+{% block footer %}
+  {% include "footer.njk" %}
+{% endblock %}
+    <script src="/assets/vendor/jQuery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/slick/slick.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/tweenmax/TweenMax.min.js"></script>
+    <script src="/assets/vendor/counter-up/countup.js"></script>
+    <script src="/assets/vendor/waypoints/waypoints.min.js"></script>
+    <script src="/assets/vendor/match-height/match-height.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

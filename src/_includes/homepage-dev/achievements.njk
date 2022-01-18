@@ -1,0 +1,22 @@
+<section class="counter-up pb-5">
+  <div class="container">
+    <div class="row">
+      <!---==== Start counter-up Section  ---=====-->
+      <div class="col-lg-10 mx-auto">
+        <div class="counter-wraper pb-4 pb-lg-6 pb-xl-8 d-md-flex">
+          {% for achieved in counter.achieved %}
+          <div class="counter-up-content">
+            <div class="counter-up-content-item">
+              <div class="counter-percent">
+                <span class="counter">{{achieved.count}}</span><span class="percent">+</span>
+              </div>
+              <h5>{{achieved.award}}</h5>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <!---==== End counter-up Section  ---=====-->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+{
+  "title": "Resume",
+  "skillsHead": "Skills",
+  "skills": ["HTML, CSS", "Front-end Development", "Back-End Development", "Java Script, PHP"],
+  "eduHead": "Education",
+  "education":[
+    {
+      "ins": "Graphic Arts Institute",
+      "degree": "MS • Information Design & Technology ",
+      "year": "2016 – 2017"
+    },
+    {
+      "ins": "Florida Gulf Coast University",
+      "degree": "BA • Psychology ",
+      "year": "2014 – 2015"
+    }
+  ],
+  "workHead": "Work Experience",
+  "work": [
+    {
+      "corp": "Exclusive Addons",
+      "dig": "Lead Designer ",
+      "year": "August 2018 - December 2019"
+    },
+    {
+      "corp": "Exclusive Addons",
+      "dig": "Designer Officer ",
+      "year": "December 2019 - Current"
+    }
+  ],
+  "toolsHead": "Tools I use every day",
+  "tools": ["/assets/images/resume/client-logo-15.svg",
+      "/assets/images/resume/client-logo-16.svg",
+      "/assets/images/resume/client-logo-17.svg",
+      "/assets/images/resume/client-logo-18.svg",
+      "/assets/images/resume/client-logo-19.svg",
+      "/assets/images/resume/client-logo-20.svg"],
+  "clientsHead": "Freelance Clients",
+  "clients": ["/assets/images/resume/client-logo-9.svg",
+      "/assets/images/resume/client-logo-10.svg",
+      "/assets/images/resume/client-logo-11.svg",
+      "/assets/images/resume/client-logo-12.svg",
+      "/assets/images/resume/client-logo-13.svg",
+      "/assets/images/resume/client-logo-14.svg"]
+}

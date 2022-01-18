@@ -1,0 +1,50 @@
+<section class="feedback py-8 py-lg-9 py-xxl-10">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="counter-wraper pb-4 pb-lg-6 pb-xl-8 d-md-flex">
+          {% for achieved in counter.achieved %}
+          <div class="counter-up-content">
+            <div class="counter-up-content-item">
+              <div class="counter-percent">
+                <span class="counter">{{achieved.count}}</span><span class="percent">+</span>
+              </div>
+              <h5>{{achieved.award}}</h5>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class="section-header">
+          <h2 class="text-white">{{_gd.fedback.title}}</h2>
+        </div>
+        <div class="feedback-slider">
+          {% for comment in fedback.comments %}
+          <div class="feedback-slider-item" data-dot-img="{{comment.img}}">
+            <div class="icon">
+              <img src="{{fedback.icon}}" alt="icon" />
+            </div>
+            <div class="content">
+              <h3>
+                {{comment.commented}}
+              </h3>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <div class="logo">
+                  <img src="{{comment.img}}" alt="Client Profile Img" />
+                </div>
+                <div class="info">
+                  <h5>{{comment.author}}</h5>
+                  <span>at</span>
+                  <h6>{{comment.dig}}</h6>
+                </div>
+              </div>
+            </div>
+          </div> 
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

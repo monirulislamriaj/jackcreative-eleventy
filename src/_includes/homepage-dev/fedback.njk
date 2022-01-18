@@ -1,0 +1,39 @@
+<section
+  class="feedback feedback-two pb-5  pb-md-8  pt-xxl-7 pb-xxl-10"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="section-header">
+          <h2 class="text-white">{{fedback.title}}</h2>
+        </div>
+        <div class="feedback-slider">
+          {% for comment in fedback.comments %}
+          <div class="feedback-slider-item" data-dot-img="{{comment.img}}">
+            <div class="icon">
+              <img src="{{fedback.icon}}" alt="icon" />
+            </div>
+            <div class="content">
+              <h3>
+                {{comment.commented}}
+              </h3>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <div class="logo">
+                  <img src="{{comment.img}}" alt="Client-Profile-Img" />
+                </div>
+                <div class="info">
+                  <h5>{{comment.author}}</h5>
+                  <span>at</span>
+                  <h6>{{comment.dig}}</h6>
+                </div>
+              </div>
+            </div>
+          </div> 
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

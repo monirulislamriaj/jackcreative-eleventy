@@ -1,0 +1,73 @@
+    <footer class="footer text-center text-md-start">
+      <div class="footer-shape-wrapper position-absolute w-100 h-100">
+        <div class="shape-1">
+        </div>
+        <div class="shape-2">
+        </div>
+        <div class="shape-3">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class=" pt-8 pb-6 py-sm-8 pb-xxl-10 pt-xxl-20 text-center">
+              <div class=" position-relative">
+                <h2 class="mb-lg-6 mb-5">{{footer.subtitle}}<br>{{footer.title}}</h2>
+                <div class="pt-xxl-4 pt-2">
+                  <a href="/{{footer.btn.link}}" class="btn btn-primary btn-lg me-sm-3 mb-4 mb-sm-0">
+                    <span class=" position-relative">
+                      {{footer.btn.text}}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                    <span class=" position-relative">
+                      {{footer.btn.text}}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-wraper">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="footer-description">
+                  <ul class="list-unstyled">
+                    {% for social in footer.social %}
+                    <li>
+                      <a href="/{{social.link}}">
+                        <img src="{{social.icon}}" alt="social icon">
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="footer-widget">
+                  <ul class="list-unstyled">
+                    {% for siteLink in footer.siteLink %}
+                    <li class="nav-item ">
+                      <a class="nav-link" href="/{{siteLink.link}}">
+                        {{siteLink.text}}
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>

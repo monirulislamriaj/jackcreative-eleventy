@@ -1,0 +1,20 @@
+{
+  "title": "Provide Services 🛠",
+  "provide":[
+    {
+      "title": "UX, UI Design",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-1.svg"
+    },
+    {
+      "title": "Web Design",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-2.svg"
+    },
+    {
+      "title": "UX Research",
+      "des": "Strategy formulation is built on the match between all organisation resources and skills based program. Design is the first thing that catches.",
+      "icon": "/assets/images/service/services-icon-3.svg"
+    }
+  ]
+}

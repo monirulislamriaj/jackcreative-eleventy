@@ -1,0 +1,49 @@
+{% extends "base.njk" %}
+
+{% block content %}
+
+    {% include "projectDetails/hero.njk" %}
+    {% include "projectDetails/desc.njk" %}
+    {% include "projectDetails/design.njk" %}
+    {% if collections.projects %}
+    {% set nextPost = collections.projects | getNextCollectionItem(page) %}
+    {% if nextPost %}
+    <section class="project-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-header">
+              <h2>Next Project ✌</h2>
+            </div>
+            <div class="col-lg-12">
+              <div class="project-item one">
+                <div class="project-item-content">
+                  <h2>
+                    {{nextPost.data.title}}
+                  </h2>
+                  <p>{{nextPost.data.type}}</p>
+                  <a
+                    href="{{nextPost.url}}"
+                    class="btn btn-secondary btn-lg mb-4 mb-sm-0"
+                  >
+                    <span class="position-relative">{{nextPost.data.btnText}}</span>
+                    <span class="position-relative">{{nextPost.data.btnText}}</span>
+                  </a>
+                </div>
+                <div class="project-item-banner">
+                  <img
+                    src="{{nextPost.data.img}}"
+                    class="w-100"
+                    alt="project-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+    {% endif %}
+
+{% endblock %}

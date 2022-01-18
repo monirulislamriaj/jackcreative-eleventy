@@ -1,0 +1,56 @@
+{
+  "subtitle": "Have a project in mind? ",
+  "title": " Let’s get to work.👋📫",
+  "btn":{
+    "text": "Say Hello",
+    "link": "contact"
+  },
+  "siteLink":[
+    {
+      "text":"Project",
+      "link":"project"
+    },
+    {
+      "text":"Behance",
+      "link":"#"
+    },
+    {
+      "text":"Dribbble",
+      "link":"#"
+    },
+    {
+      "text":"Blog",
+      "link":"blog"
+    },
+    {
+      "text":"404",
+      "link":"404"
+    }
+  ],
+  "social":[
+    {
+      "icon":"/assets/images/footer/icon-1.svg",
+      "link":"#"
+    },
+    {
+      "icon":"/assets/images/footer/icon-2.svg",
+      "link":"#"
+    },
+    {
+      "icon":"/assets/images/footer/icon-3.svg",
+      "link":"#"
+    },
+    {
+      "icon":"/assets/images/footer/icon-4.svg",
+      "link":"#"
+    },
+    {
+      "icon":"/assets/images/footer/icon-5.svg",
+      "link":"#"
+    },
+    {
+      "icon":"/assets/images/footer/icon-6.svg",
+      "link":"#"
+    }
+  ]
+}
